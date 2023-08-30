@@ -1,0 +1,106 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.prompt-bubble-container {
+    margin: 0 auto;
+    width: 60%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.message-bubble-container {
+    margin: 0 auto;
+    width: 60%;
+    display: flex;
+    justify-content: center;
+}
+
+.prompt-bubble {
+    /* display: inline-block; */
+    padding: 8px 16px;
+    margin: 30px 0;
+    max-width: 100%;
+    background-color: #FFB800;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.message-bubble {
+    /* display: inline-block; */
+    padding: 8px 16px;
+    width: 100%;
+    background-color: #f2f2f2;
+    border-radius: 4px;
+    box-sizing: border-box;
+    border: 1px solid rgba(0, 0, 0, 0.2)
+}
+
+.prompt-bubble-content {
+    word-wrap: break-word;
+    white-space: pre-wrap;
+    margin: 0;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 175%;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-family: Pretendard,Apple SD Gothic Neo,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen,Ubuntu,Cantarell,Fira Sans,Droid Sans,Helvetica Neue,sans-serif;
+    color: rgba(0, 0, 0, 0.8);
+}
+
+.prompt-container {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 16px;
+}
+
+.prompt-textarea-container {
+    width: 75%;
+    display: flex;
+    justify-content: center;                /* 가운데 정렬 (display:flex를 사용하여 실행) */
+    padding: 16px;                          /* box를 bottom에서부터 16px 만큼 띄우기 위함 */
+    background-color: #f2f2f2;
+    box-shadow: 0 -2px 4px 0 rgba(0, 0, 0, 0.2);    /* shadow's (X offset, Y offset, Blur, Spread, Color) */
+    border-radius: 10px;
+    border: 2px solid #FFB800;
+}
+
+.prompt-textarea-box {
+    width: 100%;
+    /* 부모 width 크기의 100% */
+    /* max-width: 800px; */
+    max-height: 300px;
+    resize: none;
+    padding: 8px 16px;
+    font-size: 16px;
+    border: none;
+    outline: none;
+    /* border-radius: 4px;
+    border: 2px solid #000000; */
+}
+
+.typing-indicator {
+    position: absolute;
+    bottom: 8px;
+    right: 8px;
+    animation: blink 1s step-end infinite alternate;
+  }
+  
+  @keyframes blink {
+    from {
+      opacity: 1;
+    }
+    to {
+      opacity: 0;
+    }
+  }
+
+  footer {
+    height: 300px;
+    position: relative;
+  }
